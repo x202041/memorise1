@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemorizeApp</title>
+</head>
+<body>
+    <div>
+        <p>暗記する<button onclick="f(0)">英語</button><span id="0"></span><button onclick="allhide()">英語全非表示</button></p>
+
+        <p>これはペンですか、鉛筆ですか?<button onclick="f(1)">英語</button><span id="1"></span></p>
+        <p>それはペンです。<button onclick="f(2)">英語</button><span id="2"></span></p>
+
+        <p>学校の後、テニスをしよう！<button onclick="f(3)">英語</button><span id="3"></span></p>
+        <p>よし、やろう。<button onclick="f(4)">英語</button><span id="4"></span></p>
+
+        <p>ジムは今ここにいません。<button onclick="f(5)">英語</button><span id="5"></span></p>
+        <p>ジムは昨日ここにいました。<button onclick="f(6)">英語</button><span id="6"></span></p>
+        <p>あなたもここにいました。<button onclick="f(7)">英語</button><span id="7"></span></p>
+
+        <p>あなたは昨日テニスをしましたか？<button onclick="f(8)">英語</button><span id="8"></span></p>
+        <p>はい、しました。<button onclick="f(9)">英語</button><span id="9"></span></p>
+        <p>ユミと一緒にしました。<button onclick="f(10)">英語</button><span id="10"></span></p>
+        <p>いいえ、しませんでした。<button onclick="f(11)">英語</button><span id="11"></span></p>
+        <p>私は映画に行きました。<button onclick="f(12)">英語</button><span id="12"></span></p>
+        
+    </div>
+    <script>
+        /* temprate
+        <p><button onclick="f()">英語</button><span id=""></span></p>
+        
+        */
+        let showing=[];
+        for(let i=0;i<=99;i++){
+            showing.push(0);
+        }
+        let En=["memorize","Is this a pen or a pencil?","It's a pen.",
+        "Let's play tennis after school.","Yes, let's.",
+        "Jim isn't here now.","Jim was here yesterday.","You were here, too.",
+        "Did you play tennis yesterday?","Yes, I did.","I played it with Yumi.","No, I didn't.","I went to the movies."
+    ];
+        function f(n){
+            if(showing[n]==0){
+                document.getElementById(n).innerText=En[n];
+                showing[n]=1;
+            }else{
+                document.getElementById(n).innerText="";
+                showing[n]=0;
+            }
+        }
+        function allhide(){
+            for(let i=0;i<=99;i++){
+                document.getElementById(i).innerText="";
+                showing[i]=0;
+            }
+        }
+    </script>
+</body>
+</html>
