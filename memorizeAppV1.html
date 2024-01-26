@@ -4,42 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MemorizeApp</title>
+    <style>
+    </style>
 </head>
-<body>
+<body id="main">
     <div>
-        <p>暗記する<button onclick="f(0)">英語</button><span id="0"></span><button onclick="allhide()">英語全非表示</button></p>
+        <h2>英文暗記ツールv1.3</h2>
+        <!--1/18 v1 completed
+            1/19 v1.1 completed
+            1/20 v1.2 completed
+            1/21 v1.21completed
+            1/26 v1.3 completed
+        -->
+        <span style="color:gray;">間違えていたら教えていただけると幸いです</span>
+        <p>暗記する<button onclick="f(0)">表示</button><span id="0"></span></p>
+    <p><button onclick="allhide()">全非表示</button>
+        <button onclick="turnmode()">モード切り替え</button>
+        <a href="#secondpart">2ndPart</a>
+        <a href="#thirdpart">3rdPart</a>
+        <a href="#fourthpart">4thPart</a>
+        <a href="#bonus">おまけ</a>
+    </p>
+        <h3>First part</h3>
+        <p>これはペンですか、鉛筆ですか?<button onclick="f(1)">表示</button><span id="1"></span></p>
+        <p>それはペンです。<button onclick="f(2)">表示</button><span id="2"></span></p>
 
-        <p>これはペンですか、鉛筆ですか?<button onclick="f(1)">英語</button><span id="1"></span></p>
-        <p>それはペンです。<button onclick="f(2)">英語</button><span id="2"></span></p>
+        <p>学校の後、テニスをしよう！<button onclick="f(3)">表示</button><span id="3"></span></p>
+        <p>よし、やろう。<button onclick="f(4)">表示</button><span id="4"></span></p>
 
-        <p>学校の後、テニスをしよう！<button onclick="f(3)">英語</button><span id="3"></span></p>
-        <p>よし、やろう。<button onclick="f(4)">英語</button><span id="4"></span></p>
+        <p>ジムは今ここにいません。<button onclick="f(5)">表示</button><span id="5"></span></p>
+        <p>ジムは昨日ここにいました。<button onclick="f(6)">表示</button><span id="6"></span></p>
+        <p>あなたもここにいました。<button onclick="f(7)">表示</button><span id="7"></span></p>
 
-        <p>ジムは今ここにいません。<button onclick="f(5)">英語</button><span id="5"></span></p>
-        <p>ジムは昨日ここにいました。<button onclick="f(6)">英語</button><span id="6"></span></p>
-        <p>あなたもここにいました。<button onclick="f(7)">英語</button><span id="7"></span></p>
-
-        <p>あなたは昨日テニスをしましたか？<button onclick="f(8)">英語</button><span id="8"></span></p>
-        <p>はい、しました。<button onclick="f(9)">英語</button><span id="9"></span></p>
-        <p>ユミと一緒にしました。<button onclick="f(10)">英語</button><span id="10"></span></p>
-        <p>いいえ、しませんでした。<button onclick="f(11)">英語</button><span id="11"></span></p>
-        <p>私は映画に行きました。<button onclick="f(12)">英語</button><span id="12"></span></p>
+        <p>あなたは昨日テニスをしましたか？<button onclick="f(8)">表示</button><span id="8"></span></p>
+        <p>はい、しました。<button onclick="f(9)">表示</button><span id="9"></span></p>
+        <p>ユミと一緒にしました。<button onclick="f(10)">表示</button><span id="10"></span></p>
+        <p>いいえ、しませんでした。<button onclick="f(11)">表示</button><span id="11"></span></p>
+        <p>私は映画に行きました。<button onclick="f(12)">表示</button><span id="12"></span></p>
         
+        <h3 id="secondpart">Second part</h3>
+
+        <p>今朝のロンドンは晴れてましたか？<button onclick="f(13)">表示</button><span id="13"></span></p>
+        <p>いいえ、雨が降っていました。<button onclick="f(14)">表示</button><span id="14"></span></p>
+        
+        <p>あなたの午後の予定はなんですか？<button onclick="f(15)">表示</button><span id="15"></span></p>
+        <p>サッカーをするつもりです。<button onclick="f(16)">表示</button><span id="16"></span></p>
+        
+        <p>宿題をしましたか？<button onclick="f(17)">表示</button><span id="17"></span></p>
+        <p>いいえ、私は今やらないといけません。<button onclick="f(18)">表示</button><span id="18"></span></p>
+        
+        <p>入っていいですか?<button onclick="f(19)">表示</button><span id="19"></span></p>
+        <p>どうぞ。<button onclick="f(20)">表示</button><span id="20"></span></p>
+        
+        <h3 id="thirdpart">Third part</h3>
+
+        <p>箱の中身は何ですか?<button onclick="f(21)">表示</button><span id="21"></span></p>
+        <p>その中には音楽テープが入っています。<button onclick="f(22)">表示</button><span id="22"></span></p>
+        
+        <p>先週の日曜、日光へ行きました。<button onclick="f(23)">表示</button><span id="23"></span></p>
+        <p>そこについたとき、雨が降っていました。<button onclick="f(24)">表示</button><span id="24"></span></p>
+        
+        <p>その少年は、とても良いプレーヤーになりました。<button onclick="f(25)">表示</button><span id="25"></span></p>
+        <p>彼は幸せそうでした。<button onclick="f(26)">表示</button><span id="26"></span></p>
+        
+        <p>昨年の冬にジムは札幌に行きましたか?<button onclick="f(27)">表示</button><span id="27"></span></p>
+        <p>はい。彼は旅行の写真を見せてくれました。<button onclick="f(28)">表示</button><span id="28"></span></p>
+        
+        <p>パーティーに行くつもりですか?<button onclick="f(29)">表示</button><span id="29"></span></p>
+        <p>はい。そこで会いましょう。<button onclick="f(30)">表示</button><span id="30"></span></p>
+        
+        <h3 id="fourthpart">Fourth part</h3>
+        <p>ペンをいくつか見せてください。<button onclick="f(31)">表示</button><span id="31"></span></p>
+        <p>わかりました。<button onclick="f(32)">表示</button><span id="32"></span></p>
+        
+        <p>一緒に行きましょうか?<button onclick="f(33)">表示</button><span id="33"></span></p>
+        <p>ええ、ありがとう。<button onclick="f(34)">表示</button><span id="34"></span></p>
+        
+        <p>船便はいくらかかりますか?<button onclick="f(35)">表示</button><span id="35"></span></p>
+        <p>1ドル45セントかかります。<button onclick="f(36)">表示</button><span id="36"></span></p>
+        
+        <p>見て、雨が降っています。<button onclick="f(37)">表示</button><span id="37"></span></p>
+        <p>あら嫌だ。明日は晴れて欲しいですね。<button onclick="f(38)">表示</button><span id="38"></span></p>
+        
+        <p>私はサッカーの試合を見るのが好きです。<button onclick="f(39)">表示</button><span id="39"></span></p>
+        
+        <!--template
+        <p><button onclick="f()">表示</button><span id=""></span></p>
+        
+        -->
+    </div>
+    <div id="bonus">
+        <h3>おまけ</h3>
+        <form>
+            <input type="text" placeholder="Enter first word." id="firstword">
+            <input type="password" placeholder="Enter second word." id="secondword" onkeyup="userfavorite()">
+        </form>
+        <p>三角形合同条件<button onclick="g(0)">表示</button><span id="b0"></span></p>
+        <p>確認する<button onclick="g(7)">表示</button><span id="b7"></span></p>
+        <p>図書館<button onclick="g(1)">表示</button><span id="b1"></span></p>
+        <p>～を探す<button onclick="g(2)">表示</button><span id="b2"></span></p>
+        <p>光る,輝く(動詞)<button onclick="g(3)">表示</button><span id="b3"></span></p>
+        <p>光,灯り(名詞)<button onclick="g(4)">表示</button><span id="b4"></span></p>
+        <p>明るい,眩しい(形容詞)<button onclick="g(5)">表示</button><span id="b5"></span></p>
+        <p>完了する,完成する<button onclick="g(6)">表示</button><span id="b6"></span></p>
+        <p>～を楽しみにしている<button onclick="g(9)">表示</button><span id="b9"></span></p>
+        <p>何回か<button onclick="g(10)">表示</button><span id="b10"></span></p>
+        <p>別れ(名詞)<button onclick="g(11)">表示</button><span id="b11"></span></p>
+        <p>ところで、<button onclick="g(12)">表示</button><span id="b12"></span></p>
+        <p>studyの現在分詞,過去分詞<button onclick="g(13)">表示</button><span id="b13"></span></p>
+        <p>playの現在分詞,過去分詞<button onclick="g(14)">表示</button><span id="b14"></span></p>
+        <p>tryの現在分詞,過去分詞<button onclick="g(15)">表示</button><span id="b15"></span></p>
+        <p>祝う<button onclick="g(16)">表示</button><span id="b16"></span></p>
+        <p>問題がある<button onclick="g(17)">表示</button><span id="b17"></span></p>
+        <p>招待する<button onclick="g(18)">表示</button><span id="b18"></span></p>
+        <p>賞を取る<button onclick="g(19)">表示</button><span id="b19"></span></p>
+        <p>財布<button onclick="g(20)">表示</button><span id="b20"></span></p>
+        <p>驚いた<button onclick="g(21)">表示</button><span id="b21"></span></p>
+        <p>緊張した<button onclick="g(22)">表示</button><span id="b22"></span></p>
+        <p>4<button onclick="g(23)">表示</button><span id="b23"></span></p>
+        <p>14<button onclick="g(24)">表示</button><span id="b24"></span></p>
+        <p>40<button onclick="g(25)">表示</button><span id="b25"></span></p>
+        
+        <p>(入力してください)<span id="userEditable"></span><button onclick="g(8)">表示</button><span id="b8"></span></p>
     </div>
     <script>
-        /* temprate
-        <p><button onclick="f()">英語</button><span id=""></span></p>
+        /* template
+        <p><button onclick="f()">表示</button><span id=""></span></p>
+        
+        <p><button onclick="g()">表示</button><span id="b"></span></p>
         
         */
         let showing=[];
-        for(let i=0;i<=99;i++){
+        let bonusshowing=[];
+        for(let i=0;i<=199;i++){
             showing.push(0);
+            bonusshowing.push(0);
         }
         let En=["memorize","Is this a pen or a pencil?","It's a pen.",
         "Let's play tennis after school.","Yes, let's.",
         "Jim isn't here now.","Jim was here yesterday.","You were here, too.",
         "Did you play tennis yesterday?","Yes, I did.","I played it with Yumi.","No, I didn't.","I went to the movies."
+        ,"Was it fine this morning in London?","No, it was raining."
+        ,"What are your plans for this afternoon?","I'm going to play soccer."
+        ,"Did you do your homework?","No, I must do it now."
+        ,"May I come in?","Sure."
+        ,"What's in the box?","There is a music tape in it."
+        ,"I visited Nikko last Sunday."
+        ,"When I arrived there, it was raining."
+        ,"The boy became a very good player.","He looked happy."
+        ,"Did Jim go to Sapporo last winter?"
+        ,"Yes. He showed me the pictures of his trip."
+        ,"Are you going to the party, too?"
+        ,"Yes. I'll see you there."
+        ,"Will you show me some pens?","Sure."
+        ,"Shall I go with you?","Oh, thank you."
+        ,"How much will it cost by sea mail?","That'll be one dollar and forty-five cents."
+        ,"Look! It's raining.","Oh,no! I hope (that) it'll be fine tomorrow."
+        ,"I like to watch soccer games."
     ];
+    let bonus=["三辺相等,二辺夾角相等,一辺両端角相等"
+    ,"library","look for ~"
+    ,"shine","light","bright","complete"
+    ,"confirm","","look forward to ~"
+    ,"several times","farewell","By the way,"
+    ,"studying,studied","playing,played","trying,tried"
+    ,"celebrate","have a problem","invite"
+    ,"win a prize","wallet","surprised","nervous"
+    ,"four","fourteen","forty"
+    ]
         function f(n){
             if(showing[n]==0){
                 document.getElementById(n).innerText=En[n];
@@ -49,11 +181,48 @@
                 showing[n]=0;
             }
         }
+        function g(n){
+            if(bonusshowing[n]==0){
+                document.getElementById("b"+n).innerText=bonus[n];
+                bonusshowing[n]=1;
+            }else{
+                document.getElementById("b"+n).innerText="";
+                bonusshowing[n]=0;
+            }
+        }
         function allhide(){
-            for(let i=0;i<=99;i++){
+            for(let i=0;i<=En.length-1;i++){
                 document.getElementById(i).innerText="";
                 showing[i]=0;
             }
+            for(let i=0;i<=bonus.length-1;i++){
+                document.getElementById("b"+i).innerText="";
+                bonusshowing[i]=0;
+            }
+        }
+        let mode=0;
+        function turnmode(){
+            if(mode==0){
+            let main=document.getElementById("main");
+            main.style.color="#fff";
+            main.style.backgroundColor="#333";
+            mode=1;
+            }else{
+            let main=document.getElementById("main");
+            main.style.color="#000";
+            main.style.backgroundColor="#fff";
+            mode=0;  
+            }
+        }
+        let date=new Date();
+        if(date.getHours()>=21||date.getHours()<=5){
+        turnmode();
+        }
+        function userfavorite(){
+            let firstword=document.getElementById("firstword").value;
+            let secondword=document.getElementById("secondword").value;
+            document.getElementById("userEditable").innerHTML=firstword;
+            bonus[8]=secondword;
         }
     </script>
 </body>
